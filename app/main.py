@@ -1,3 +1,5 @@
+## FastAPI Tutorial
+
 from typing import Union
 
 from fastapi import FastAPI
@@ -23,3 +25,5 @@ def read_item(item_id: int, xyz: str, q: Union[str, None] = None):
     # code..
     return {"item_id": item_id, "xyz": xyz, "q": q}
 # item_id, xyz는 필수 입력 url // q는 query를 뜻하며, Union을 사용하므로 필수 입력은 아님.
+
+
