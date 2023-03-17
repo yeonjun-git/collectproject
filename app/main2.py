@@ -20,7 +20,7 @@ templates = Jinja2Templates(directory=Base_dir/"templates")
 
 # 아래의 라우터가 HTML 파일을 서빙하는 라우터임.
 @app.get("/items/{id}", response_class=HTMLResponse) # response 타입을 HTMLResponse로.
-async def read_item(request: Request, id: str):
+async def read_item(request: Request, id: str): # request는 반드시 지정해야함
     return templates.TemplateResponse("item.html", {"request": request, "id": id, "data":"냅니 바보"})
 
 
