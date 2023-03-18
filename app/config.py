@@ -18,8 +18,8 @@ def get_secret(
             return default_value
         raise EnvironmentError(f"Set the {key} environment variable.")
     
+Mongo_DB_Name = get_secret("Mongo_DB_Name")
+Mongo_Url = get_secret("Mongo_Url")
+Naver_Api_Id = get_secret("Naver_Api_Id")
+Naver_Api_Secret = get_secret("Naver_Api_Secret")
 
-if __name__ == "__main__":
-    world = get_secret("hello")
-    print(world)
-    
