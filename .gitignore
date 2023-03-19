@@ -1,6 +1,4 @@
-venv
-.vscode
+venv/
+.pyc
 secrets.json
-app/__pycache__
-models/__pycache__
 
