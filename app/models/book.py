@@ -12,3 +12,4 @@ class BookModel(Model):
 
     class Config:
         collection = "books"
+

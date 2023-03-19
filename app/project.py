@@ -95,3 +95,6 @@ def on_app_start():
 @app_project.on_event("shutdown") # shutdown이라는 이벤트 실행될 때
 def on_app_shutdown():
     mongodb.close()
+
+
+    
