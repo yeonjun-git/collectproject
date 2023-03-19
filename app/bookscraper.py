@@ -49,6 +49,8 @@ class NaverBookScraper:
     def run(self, keyword, total_page):
         return asyncio.run(self.search(keyword, total_page))
     
+
+# Book Scraper 테스트해보기싶으면 이 파일을 실행해본다.    
 if __name__ == "__main__":
     scraper = NaverBookScraper()
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
